@@ -1,0 +1,192 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{titling}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{enumitem}
+
+\usepackage{framed}
+\usepackage{listings}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Northridge Preparatory School} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Worksheet\#2 : Python 3 at home \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\preauthor{}
+\postauthor{}
+\author{} % Your name
+
+\predate{}
+\postdate{}
+\date{} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Installing Python at Home}
+
+If you have Windows XP or earlier, or a non-Windows operating system, talk to Mr. Rodriguez.  Otherwise, follow these directions to install Python 3 on your home computer:
+
+\begin{enumerate}
+
+
+\item Go to: https://www.python.org/downloads/
+
+\item Hover over the "Downloads" tab, and under "Download for Windows" click on Python 3.5.1
+
+\item Find and open the downloaded file: python-3.5.1.exe
+
+\item Follow the on-screen directions for a regular installation
+
+
+\end{enumerate}
+
+You should now have Python 3 installed on your computer.  If you can't find it, search for "IDLE", and that should bring up the Python interface.  It will probably be useful to right-click on the search result and add a shortcut to your desktop.\\
+
+
+%[More info here?]
+
+
+
+\section{Finding your saved documents folder}
+
+It can sometimes be a challenge to locate the saved files you have created with Python.  Follow these directions to establish an easy-to-find folder:
+
+\begin{enumerate}
+
+\item Open Python, and in the File menu choose New File.  This opens a new script.
+
+\item In the new script, under the File menu choose "Save As...".  A Save window will pop up.
+
+\item Just under the window title "Save As" is the folder address bar.  It should end with the name Python35-32.  Right-click on this folder name, and select "Copy Address".
+
+\item Right-click on an empty space on your desktop, and choose "Paste Shortcut".
+
+Now you can quickly access your saved file folder.
+
+\end{enumerate}
+
+
+%[Practice moving, renaming, exporting docs ?]
+
+
+\pagebreak
+
+\section{Testing Out Your Shell}
+
+Do the following steps to practice debugging with Python on your own computer.
+
+\subsection{Importing and Running a Script}
+
+
+
+\begin{enumerate}
+
+\item Check your email for a message entitled "Worksheet 2 - Faulty Script", and download the attachment entitled "Worksheet 2 - Faulty Script.py".  This is a script of code with errors; it will not run properly.  
+
+\item The code below is a correct version of the script you just downloaded.  Use it to proofread your faulty script, and correct the 8 errors it contains.  
+
+\item Run your debugged script and record the 3x3 matrix output here:
+
+\end{enumerate}
+
+
+
+\vspace{1cm}
+
+
+\begin{framed}
+\begin{lstlisting}[language=Python]
+# Code Start
+
+# 3x3 matrix
+X = [[12,7,3],
+    [4 ,5,6],
+    [7 ,8,9]]
+# 3x4 matrix
+Y = [[5,8,1,2],
+    [6,7,3,0],
+    [4,5,9,1]]
+# result is 3x4
+result = [[0,0,0,0],
+         [0,0,0,0],
+         [0,0,0,0]]
+
+# iterate through rows of X
+for i in range(len(X)):
+   # iterate through columns of Y
+   for j in range(len(Y[0])):
+       # iterate through rows of Y
+       for k in range(len(Y)):
+           result[i][j] += X[i][k] * Y[k][j]
+
+for r in result:
+   print(r)
+
+\end{lstlisting}
+\end{framed}
+
+
+
+\end{document}

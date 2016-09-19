@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{titling}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{enumitem}
+
+\usepackage{framed}
+\usepackage{setspace} %\begin{doublespacing} \end...
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Northridge Preparatory School} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Worksheet\#4 : Chapter 2 Exercises \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\preauthor{}
+\postauthor{}
+\author{} % Your name
+
+\predate{}
+\postdate{}
+\date{} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Variable Assignment}
+
+%\lipsum[2] % Dummy text
+
+\begin{enumerate}
+
+\item Do Exercise 2.1, and for each bullet point jot down a note about what you can/can't do
+
+\begin{enumerate}
+\begin{doublespacing}
+
+\item\rule{12cm}{0.15mm}
+
+\item\rule{12cm}{0.15mm}
+
+\item\rule{12cm}{0.15mm}
+
+\item\rule{12cm}{0.15mm}
+
+\item\rule{12cm}{0.15mm}
+
+\end{doublespacing}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item Exercise 2.2.1:  The volume of a sphere with radius r is $\frac{4}{3}\pi r^3$.  What is the volume of a sphere with radius $5$?  Write out your code below:
+
+\begin{framed}
+
+\vspace{1.5in}
+
+\end{framed}
+
+\pagebreak
+
+
+\item Exercise 2.2.2: Suppose the cover price of a book is \$24.95, but bookstores get a 40\% discount.  Shipping costs \$3 for the first copy and 75 cents for each additional copy.  
+
+\begin{multicols}{3}
+
+\begin{doublespacing}
+
+\underline{Variable}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\underline{Variable Name}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\underline{Variable Value}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\end{doublespacing}
+\end{multicols}
+
+\begin{doublespacing}
+Write out the equation for the Total Wholesale Cost \textbf{using only the variable names}: 
+
+\vspace{0.5cm}
+
+TWC =   \rule{10cm}{0.15mm}\\
+
+Now, use the values given in the problem: TWC = \$\rule{3cm}{0.15mm}
+\end{doublespacing}
+
+\vspace{0.5in}
+
+\item Exercise 2.2.3:  If I leave my house at 6:52 am and run 1 mile at an easy pace (8:15 per mile), then 3 miles at tempo (7:12 per mile) and 1 mile at easy pace again, what time do I get home for breakfast?  Sketch your plans in a notebook, then draft out your code:
+
+\begin{framed}
+
+\vspace{2.5in}
+
+\end{framed}
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

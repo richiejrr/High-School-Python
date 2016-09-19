@@ -1,0 +1,337 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{titling}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{enumitem}
+
+\usepackage{setspace} %\begin{doublespacing} \end...
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Northridge Preparatory School} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Worksheet\#3 : Variable Assignment Practice I\\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\preauthor{}
+\postauthor{}
+\author{} % Your name
+
+\predate{}
+\postdate{}
+\date{} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Modeling With Expressions}
+
+
+
+
+In order to write mathematical programs that effectively model real-life situations, you must identify the key variables.  The following problems outline a series of increasingly complex situations which require more variables.  This time, the variables are identified for you.  Your task is to create a mathematical expression that accurately represents their relationship to total profit.
+
+
+\subsection{Open For Business!}
+
+Summer is here, and you want to make some money.  So you decide to start a business mowing lawns around your neighborhood. You decide to charge \$5.00 per lawn.  This Saturday, two of your neighbors hire you once, and one hires you twice (front \& back).  How much did you make this week?
+
+\begin{multicols}{3}
+
+\begin{doublespacing}
+
+\underline{Variable}
+
+Price per lawn
+
+Number of lawns
+
+\underline{Variable Name}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\underline{Variable Value}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\end{doublespacing}
+\end{multicols}
+
+\begin{doublespacing}
+Write out the equation for the Total Profit \textbf{using only the variable names}: 
+
+\vspace{0.5cm}
+
+Profit =   \rule{10cm}{0.15mm}
+
+%SOLUTION:   P = n*l
+
+\end{doublespacing}
+
+\pagebreak
+%------------------------------------------------
+\subsection{Thirst For Success}
+
+Mowing lawns out in the hot sun is hard work.  You need to make sure you don't get dehydrated.  So you decide to use some of the money you earn to buy some sports drinks.  You will need one 12-oz bottle per lawn you mow except the last (You go home at the end and eat a popsicle).  Each bottle costs \$0.50.\\
+	
+This Saturday, 3 neighbors hire you once and 2 hire you twice.  How much did you make?
+
+\begin{multicols}{3}
+
+\begin{doublespacing}
+
+\underline{Variable}
+
+Price per lawn
+
+Number of lawns
+
+Price per drink
+
+\underline{Variable Name}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\underline{Variable Value}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\end{doublespacing}
+\end{multicols}
+
+(Notice that you do not need a separate variable name for "Number of drinks".  Why not?)
+
+\begin{doublespacing}
+Write out the equation for the Total Profit \textbf{using only the variable names}: 
+
+\vspace{0.5cm}
+
+Profit =   \rule{10cm}{0.15mm}
+
+%SOLUTION:  P = l*n - d*(n-1)
+
+
+\end{doublespacing}
+
+%------------------------------------------------
+\pagebreak
+\subsection{Expansion}
+
+
+
+You do such a good job that households in more distant parts of your neighborhood want to hire you.  But it's a real pain to lug all your equipment around, and it takes up time and car fuel.  You decide to charge a \$2  flat distance fee to anyone who lives more than  5 miles away.\\  
+
+This weekend, near your house 5 neighbors hire you once, and two hire you twice.  Far from your house, 1 person hires you once, and 3 people hire you twice.  How much did you make?
+
+\begin{multicols}{3}
+
+\begin{doublespacing}
+
+\underline{Variable}
+
+Price per lawn
+
+Number of lawns
+
+Price per drink
+
+Distance fee
+
+Number of far houses
+
+\underline{Variable Name}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\underline{Variable Value}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\rule{2.5cm}{0.15mm}
+
+\end{doublespacing}
+\end{multicols}
+
+
+
+\begin{doublespacing}
+Write out the equation for the Total Profit \textbf{using only the variable names}: 
+
+\vspace{0.5cm}
+
+Profit =   \rule{10cm}{0.15mm}
+
+%SOLUTION: P = l*n - d*(n-1) + fee*far
+
+\end{doublespacing}
+
+
+%THE FOLLOWING WAS ADDED TO WKST #7
+%\pagebreak
+%%------------------------------------------------
+%
+%\subsection{Help Wanted}
+%
+%Business is booming!  You now have more customers than you can handle on your own.  So you decide to hire your two younger brothers to mow the houses within walking distance.  They of course demand to be paid and supplied with sports drinks.  You decide to pay them each \$3.00 per lawn (only one person mows one lawn) and provide them each with one 12-oz sports drink per lawn except the last.
+%
+%This weekend, near your house 10 neighbors hire you once, and 4 hire you twice.  Far from your house, 3 people hire you once, and 3 hire you twice.  How much did you make?
+%
+%\begin{multicols}{3}
+%
+%\begin{doublespacing}
+%
+%\underline{Variable}
+%
+%Price per lawn
+%
+%Number of lawns
+%
+%Price per drink
+%
+%Number of Employees
+%
+%Employee fee per lawn
+%
+%Distance fee
+%
+%Number of far houses
+%
+%\underline{Variable Name}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\underline{Variable Value}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\rule{2.5cm}{0.15mm}
+%
+%\end{doublespacing}
+%\end{multicols}
+%
+%
+%
+%\begin{doublespacing}
+%Write out the equation for the Total Profit \textbf{using only the variable names}: 
+%
+%\vspace{0.5cm}
+%
+%Profit =   \rule{10cm}{0.15mm}
+%
+%\end{doublespacing}
+%
+%
+%\pagebreak
+%
+%
+
+
+
+\end{document}

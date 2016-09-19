@@ -1,0 +1,204 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{fourier} % Use the Adobe Utopia font for the document - comment this line to return to the LaTeX default
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{titling}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{framed}
+
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{Northridge Preparatory School} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Worksheet\#1 : Preliminary Activities \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\preauthor{}
+\postauthor{}
+\author{} % Your name
+
+\predate{}
+\postdate{}
+\date{} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+\section{Hello, World!}
+
+Follow these directions to execute your first program:
+
+\begin{enumerate}
+
+\item At the prompt(> > >), type the following command:  
+
+\begin{framed}
+\begin{lstlisting}
+>>> print('Hello, World!')
+\end{lstlisting}
+\end{framed}
+
+\item Press Enter
+
+\item Check that your screen displays: Hello, World!
+
+\item If not, look carefully at what you typed for step 1 and try again.
+
+
+\end{enumerate}
+
+%------------------------------------------------
+
+%\subsection{Example of list (3*itemize)}
+%\begin{itemize}
+%	\item First item in a list 
+%		\begin{itemize}
+%		\item First item in a list 
+%			\begin{itemize}
+%			\item First item in a list 
+%			\item Second item in a list 
+%			\end{itemize}
+%		\item Second item in a list 
+%		\end{itemize}
+%	\item Second item in a list 
+%\end{itemize}
+
+%------------------------------------------------
+
+%\subsection{Example of list (enumerate)}
+%\begin{enumerate}
+%\item First item in a list 
+%\item Second item in a list 
+%\item Third item in a list
+%\end{enumerate}
+
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 3
+%----------------------------------------------------------------------------------------
+
+\pagebreak
+
+\section{Basic Arithmetic Operations: +,-,*,/,**}
+
+Perform the following operations in Python.  Write your result in the space provided:
+
+
+
+\begin{multicols}{3}
+
+\begin{enumerate}[label=\Alph*.]
+
+\item $40 + 2 = \rule{1.5cm}{0.15mm}$
+
+\item $43 - 1 = \rule{1.5cm}{0.15mm}$
+
+\item $6 * 7 = \rule{1.5cm}{0.15mm}$
+
+\item $6 ** 2 + 6 = \rule{1.5cm}{0.15mm}$
+
+\item $84/2 = \rule{1.5cm}{0.15mm}$
+
+\item $6 \hspace{1mm} \hat{ } \hspace{1mm} 2 = \rule{1.5cm}{0.15mm}$
+
+
+\end{enumerate}
+
+\end{multicols}
+
+\vspace{1cm}
+
+Observe that +, -, *, and / are conventional addition, subtraction, multiplication, and division.
+
+\begin{enumerate}
+
+\item What operation is ** ?\\ 
+
+\rule{13cm}{0.15mm}
+
+
+
+
+\item Do you notice any other differences among your answers?  If so, what \& why?\\ 
+
+\rule{13cm}{0.15mm}\\
+
+\rule{13cm}{0.15mm}
+
+\item Can you guess what $\hspace{1mm} \hat{ } \hspace{1mm}$ is?\\ 
+
+\rule{13cm}{0.15mm}
+
+\item Try combining different numbers with the binary operator  $\hspace{1mm} \hat{ } \hspace{1mm}$, and see if you can get two different types of errors (e.g., $\underline{[blank]}$ Error).   Write the error types below:\\
+
+\rule{5cm}{0.15mm} \hspace{3cm} \rule{5cm}{0.15mm}\\
+
+
+
+\end{enumerate}
+
+
+
+\end{document}
